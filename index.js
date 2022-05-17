@@ -15,7 +15,7 @@ function isSoNguyenTo(number) {
 		return false;
 	}
 
-	for (var j = 2; j <= (number -1); j++) {
+	for (var j = 2; j <= Math.sqrt(number); j++) {
 		if (number % j === 0) {
 			return false;
 		}
@@ -58,3 +58,6 @@ function isSoNguyenTo(number) {
 //       }
 //    }
 // }
+
+
+
